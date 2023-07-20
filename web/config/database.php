@@ -11,6 +11,7 @@ $con = new mysqli(
     $password,
     $database
 );
+
 // connection check
 if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);

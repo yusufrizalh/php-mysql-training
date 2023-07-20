@@ -44,11 +44,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/training-php/web/pages/auth/dashboard.php">Dashboard</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/training-php/web/pages/courses/index.php">Courses</a>
+                        </li>
                     </ul>
                 <?php
                 }
                 ?>
-
                 <ul class="navbar-nav d-flex">
                     <?php
                     session_start();

@@ -7,8 +7,8 @@ if (!isset($_SESSION['name'])) {
 }
 ?>
 
-<div class="container py-5">
-    <h3>Dashboard &middot; <?php echo $_SESSION['name'] ?></h3>
+<div class="container mt-5 py-5">
+    <h3>Dashboard &middot; <strong><?php echo $_SESSION['name'] ?></strong></h3>
 </div>
 
 <?php
