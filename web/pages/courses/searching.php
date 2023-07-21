@@ -15,10 +15,10 @@ include("../../layouts/header.php");
             <div class="container py-5">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <h3>All Courses</h3>
+                        <h3>Courses by keyword: <?php echo $keyword; ?></h3>
                     </div>
                     <div class="d-flex-justify-content-between">
-                        <a href="" class="btn btn-md btn-primary">New Course</a>
+                        <a href="./create.php" class="btn btn-md btn-primary">New Course</a>
                         &nbsp;
                         <a href="" class="btn btn-md btn-primary">Export PDF</a>
                     </div>

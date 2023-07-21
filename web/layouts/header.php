@@ -53,7 +53,6 @@
                 ?>
                 <ul class="navbar-nav d-flex">
                     <?php
-                    session_start();
                     if (!isset($_SESSION['name'])) {
                     ?>
                         <li class="nav-item dropdown">
@@ -83,8 +82,6 @@
             <?php
                     }
             ?>
-            </li>
-            </ul>
             </div>
         </div>
     </nav>

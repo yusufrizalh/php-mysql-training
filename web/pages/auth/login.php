@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 Enter your password
                             </label>
                             <div class="col-md-9">
-                                <input type="text" name="password" class="form-control" autocomplete="off">
+                                <input type="password" name="password" class="form-control" autocomplete="off">
                                 <small class="text-danger" name="passwordError"><?php echo $passwordError ?></small>
                             </div>
                         </div>

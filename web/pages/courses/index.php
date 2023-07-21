@@ -6,7 +6,7 @@ include("../../layouts/header.php");
 <div class="container mt-5 py-5">
     <?php
     require_once "../../config/database.php";
-    $sql = "SELECT cou.cou_id, cou.cou_name, cou.cou_price, cou.cou_duration, cou.created_at, cat.cat_name FROM categories cat JOIN courses cou ON cou.fk_cat_id = cat.cat_id ORDER BY cou.cou_name ASC;";
+    $sql = "SELECT cou.cou_id, cou.cou_name, cou.cou_price, cou.cou_duration, cou.created_at, cat.cat_name FROM categories cat JOIN courses cou ON cou.fk_cat_id = cat.cat_id ORDER BY cou.created_at DESC;";
     $result = $con->query($sql);
     if ($result->num_rows > 0) {
     ?>
@@ -15,8 +15,8 @@ include("../../layouts/header.php");
                 <div>
                     <h3>All Courses</h3>
                 </div>
-                <div class="d-flex-justify-content-between">
-                    <a href="" class="btn btn-md btn-primary">New Course</a>
+                <div class="d-flex justify-content-between">
+                    <a href="./create.php" class="btn btn-md btn-primary">New Course</a>
                     &nbsp;
                     <a href="" class="btn btn-md btn-primary">Export PDF</a>
                 </div>
@@ -56,7 +56,7 @@ include("../../layouts/header.php");
                             <td class="text-center"><?php echo $row['cou_duration'] . " days"; ?></td>
                             <td class="text-center"><?php echo $row['cat_name']; ?></td>
                             <td class="d-flex justify-content-center">
-                                <a href="" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="./edit.php?course_id=<?php echo $row['cou_id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                             </td>
                         </tr>
                     </tbody>
