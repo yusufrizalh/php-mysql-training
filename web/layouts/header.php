@@ -47,6 +47,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/training-php/web/pages/courses/index.php">Courses</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/training-php/web/pages/categories/index.php">Categories</a>
+                        </li>
                     </ul>
                 <?php
                 }
