@@ -50,6 +50,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/training-php/web/pages/categories/index.php">Categories</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/training-php/web/pages/chart/chart_display.php">Chart</a>
+                        </li>
                     </ul>
                 <?php
                 }
