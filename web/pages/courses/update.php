@@ -3,7 +3,7 @@
 require_once "../../config/database.php";
 
 if (isset($_POST['update'])) {
-    $cou_id = $_POST['course_id'];
+    $cou_id = $_POST['cou_id'];
     $cou_name = $_POST['cou_name'];
     $cou_price = $_POST['cou_price'];
     $cou_duration = $_POST['cou_duration'];

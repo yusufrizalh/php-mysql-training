@@ -56,7 +56,7 @@ include("../../layouts/header.php");
                             <td class="text-center"><?php echo $row['cou_duration'] . " days"; ?></td>
                             <td class="text-center"><?php echo $row['cat_name']; ?></td>
                             <td class="d-flex justify-content-center">
-                                <a href="./edit.php?course_id=<?php echo $row['cou_id']; ?>" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="./edit.php?cou_id=<?php echo $row['cou_id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                             </td>
                         </tr>
                     </tbody>
